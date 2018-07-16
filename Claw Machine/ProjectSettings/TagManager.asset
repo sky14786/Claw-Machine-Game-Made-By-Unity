@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - bird
+  - item
+  - ddols
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 1397008733
+    locked: 0
+  - name: OBject
+    uniqueID: 1813301195
+    locked: 0
+  - name: Effect
+    uniqueID: 2429260095
+    locked: 0
+  - name: New Layer
+    uniqueID: 2915995123
+    locked: 0
+  - name: New Layer
+    uniqueID: 3716526869
+    locked: 0
+  - name: New Layer
+    uniqueID: 4209763571
+    locked: 0
+  - name: New Layer
+    uniqueID: 2567132231
+    locked: 0

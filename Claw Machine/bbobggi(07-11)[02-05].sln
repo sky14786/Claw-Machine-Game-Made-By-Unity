@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bbobggi(07-11)[02-05]", "bbobggi(07-11)[02-05].csproj", "{AF7D3B97-AA41-CD8B-C3B5-F226A0D00B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bbobggi(07-11)[02-05].Editor", "bbobggi(07-11)[02-05].Editor.csproj", "{DE80C636-F837-4356-8F80-4F03ECBA482C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF7D3B97-AA41-CD8B-C3B5-F226A0D00B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7D3B97-AA41-CD8B-C3B5-F226A0D00B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7D3B97-AA41-CD8B-C3B5-F226A0D00B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7D3B97-AA41-CD8B-C3B5-F226A0D00B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE80C636-F837-4356-8F80-4F03ECBA482C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE80C636-F837-4356-8F80-4F03ECBA482C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE80C636-F837-4356-8F80-4F03ECBA482C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE80C636-F837-4356-8F80-4F03ECBA482C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
