@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4D53EE81-3F01-36AC-E8CC-F31CFFEF2071}</ProjectGuid>
+    <ProjectGuid>{4AB64E5E-A64A-51DC-3894-0818C871BC91}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -55,10 +55,10 @@
   <ItemGroup>
      <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Jmstyle/Desktop/Unity/bbobggi(07-12)[06-30] (2)/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Jmstyle/Desktop/Unity/bbobggi(07-12)[06-30] (2)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -301,10 +301,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="JMOAssets">
- <HintPath>C:/Users/Jmstyle/Desktop/Unity/bbobggi(07-12)[06-30] (2)/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
  </Reference>
  <Reference Include="JMOAssets_CartoonFXFreeWelcome">
- <HintPath>C:/Users/Jmstyle/Desktop/Unity/bbobggi(07-12)[06-30] (2)/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Jmstyle/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -323,9 +326,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Jmstyle/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="LitJson">
- <HintPath>C:/Users/Jmstyle/Desktop/Unity/bbobggi(07-12)[06-30] (2)/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -357,7 +357,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{9C1B92DB-EA0C-9FB1-52E4-48559804E679}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{D91F5105-5C23-7763-D168-A9795BA3F50A}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
