@@ -6,31 +6,6 @@ using UnityEngine.UI;
 
 public class DestroyPointScripts : MonoBehaviour
 {
-	public AudioSource DeadSource;
-	public AudioClip DeadSound;
-    //public enum ItemType
-    //{
-    //    a,
-    //    b,
-    //    c,
-    //    d = 100,
-    //    e
-    //}
-
-    //public ItemType type;
-
-
-    // Use this for initialization
-    void Start()
-    {
-        GameManager.instance.ScoreMul = 1;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "ddols")
@@ -54,14 +29,10 @@ public class DestroyPointScripts : MonoBehaviour
                     break;
             }
             Destroy(collision.gameObject);
-            UIManager.instance.DeadEffect = Instantiate(Resources.Load("Hearts_02") as GameObject);
-            UIManager.instance.DeadEffect.transform.position = gameObject.transform.position;
-
-            //GameObject Deadeffect = Instantiate(Resources.Load("Hearts_02")as GameObject);
-            //Deadeffect.transform.position = gameObject.transform.position;
+            EffectManager.instance._EfOn(1);
             GameManager.instance.ddolsCount--;
-            UIManager.instance.ScoreText.text = "Score : " + GameManager.instance.Score.ToString();
-			DeadSource.PlayOneShot(DeadSound);
+            SoundManager.instance._DeadSound();
+            
         }
 
         if (collision.tag == "item")
@@ -70,19 +41,13 @@ public class DestroyPointScripts : MonoBehaviour
             {//  angle = (angle > 180) ? angle - 360 : angle;
                 case "item1(Clone)":
                     if (GameManager.instance.isMulScore)
-                    {
-                        //Debug.Log(GameManager.instance.isMulScore);
                         GameManager.instance.MulTime += 3;
-                    }
                     else
                     {
-                        //Debug.Log("2");
                         GameManager.instance.ScoreMul = 2;
                         StartCoroutine(GameManager.instance.MulScore());
                     }
                     break;
-                //MulScore(2);
-
                 case "item2(Clone)":
                     if (GameManager.instance.isMulScore)
                     {
@@ -92,9 +57,7 @@ public class DestroyPointScripts : MonoBehaviour
                             StartCoroutine(GameManager.instance.MulScore());
                         }
                         else
-                        {
                             GameManager.instance.MulTime += 3;
-                        }
                     }
                     else
                     {
@@ -103,27 +66,27 @@ public class DestroyPointScripts : MonoBehaviour
                     }
                     break;
                 case "item3(Clone)":
-                    if (GameManager.instance.GameTimer.value <= GameManager.instance.GameTimer.maxValue)
+                    if (UIManager.instance.GameTimer.value <= UIManager.instance.GameTimer.maxValue)
                     {
-                        if (GameManager.instance.GameTime <= GameManager.instance.GameTimer.maxValue)
+                        if (GameManager.instance.GameTime <= UIManager.instance.GameTimer.maxValue)
                         {
                             GameManager.instance.GameTime = +3f;
-                            GameManager.instance.GameTimer.value += 3f;
-                            Debug.Log(GameManager.instance.GameTimer.value);
+                            UIManager.instance.GameTimer.value += 3f;
+                            Debug.Log(UIManager.instance.GameTimer.value);
                         }
                     }
                     break;
                 case "item4(Clone)":
                     GameManager.instance.PowerTime = +5f;
                     break;
-
             }
             Destroy(collision.gameObject);
-            UIManager.instance.DeadEffect = Instantiate(Resources.Load("Fx_OilSplashHIGH_Root") as GameObject);
-            UIManager.instance.DeadEffect.transform.position = gameObject.transform.position;
+            EffectManager.instance._EfOn(2);
             GameManager.instance.itemddolsCount--;
-			DeadSource.PlayOneShot(DeadSound);
-		}
+            SoundManager.instance._DeadSound();
+            //Destroy(Effect);
+
+        }
     }
 }
 

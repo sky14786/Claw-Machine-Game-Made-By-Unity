@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224086700132132126}
   - component: {fileID: 114243320551043398}
-  - component: {fileID: 114103599899737714}
   m_Layer: 5
   m_Name: TimerBar
   m_TagString: Untagged
@@ -109,18 +108,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114103599899737714
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1074799723393882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31c5f2336ce11694387422c651fa1d91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Onesec: 0
 --- !u!114 &114243320551043398
 MonoBehaviour:
   m_ObjectHideFlags: 1

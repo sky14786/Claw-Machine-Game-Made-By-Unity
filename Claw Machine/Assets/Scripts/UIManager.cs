@@ -5,14 +5,10 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-  
     public static UIManager instance;
-    public Text ScoreText;
-    public Text MulText;
-	public GameObject DeadEffect;
-	
-   
-    
+    public Text ScoreText, MulText;
+	public GameObject DeadEffect, RankPanel, InsertScorePanel;
+    public Slider GameTimer;
     
     private void Awake()
     {
@@ -21,29 +17,10 @@ public class UIManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
         ScoreText.text = "SCORE : 0";
     }
-
-    
-
-    public void StartScene()
+    public void Update()
     {
-        SceneController.instance.StartScene();
+       ScoreText.text = "Score : " + GameManager.instance.Score.ToString();
     }
-    
-    public void MainScene()
-    {
-        SceneController.instance.MainScene();
-    }
-
-    public void EndScene()
-    {
-        SceneController.instance.EndScene();
-    }
-    
-
 }

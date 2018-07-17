@@ -2,18 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clawcontroller : MonoBehaviour
+public class ClawController : MonoBehaviour
 {
-    
+
     public float angle;
     public bool isLeft;
 
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         angle = transform.localEulerAngles.z;
@@ -32,13 +26,11 @@ public class clawcontroller : MonoBehaviour
         {
             if (angle > -13f && angle <= 43f)
                 transform.Rotate(0, 0, 2f);
-            //transform.eulerAngles = new Vector3(0,0,left++);
         }
         else
         {
             if (angle < 13f && angle >= -43f)
                 transform.Rotate(0, 0, -2f);
-            //transform.eulerAngles = new Vector3(0,0,right--);
         }
     }
 
@@ -48,13 +40,11 @@ public class clawcontroller : MonoBehaviour
         {
             if (angle > -11f && angle < 45f)
                 transform.Rotate(0, 0, -2f);
-            //transform.eulerAngles = new Vector3(0,0,left++);
         }
         else
         {
             if (angle < 11f && angle > -45f)
                 transform.Rotate(0, 0, 2f);
-            //transform.eulerAngles = new Vector3(0,0,right--);
         }
     }
 

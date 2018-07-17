@@ -6,8 +6,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager instance;
+
+    public float MoveSpeed, PowerTime, GameTime, MulTime, Onesec=1;
+    public int ddolsCount = 0, itemddolsCount =0, ScoreMul=1, Score=0;
+    public bool isMulScore;
+    
+   
+    
 
     public void Awake()
     {
@@ -21,36 +27,61 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log("Game Time Setting Success!");
-        //url = "sky14786.cafe24.com/DB_Score_insert.php";
-        GameTimer.value = 10f;
-        GameTime = 10f;
-        //UIManager.instance.ScoreText.text = "Score : 0";
     }
-    //public GameObject dead;
-    public float MoveSpeed;
-    public int ddolsCount = 0;
-    public int itemddolsCount = 0;
-    public int ScoreMul;
-    public int Score = 0;
-    public float MulTime;
-    public bool isMulScore;
-    public Slider GameTimer;
-    public float PowerTime;
-    public float GameTime;
+
+    public void Update()
+    {
+        if (SceneAdmin.instance.SceneNum == 2)
+        {
+            if (GameTime >= 0)
+                PlayingTimeControl();
+            else
+            {
+                //SceneAdmin.instance.temp_score = Score;
+                EndGameControl();
+            }
+        }
+    }
+
+    public void Start()
+    {
+        Debug.Log("Game Time Setting Success!");
+        GameTime = 15f;
+        UIManager.instance.GameTimer.value = 15f;
+        ScoreMul = 1;
+    }
+    void PlayingTimeControl()
+    {
+        if (Onesec >= 0)
+        {
+            Onesec -= Time.deltaTime;
+        }
+        else
+        {
+            Onesec = 1f;
+            GameTime -= 1f;
+            UIManager.instance.GameTimer.value -= 1f;
+        }
+    }
+    void EndGameControl()
+    {
+        Debug.Log("게임끔");
+        SceneAdmin.instance.EndScene();
+    }
 
 
-    //public string url;
-    //public float GameTimer;
 
 
-    
+
+
+
+
 
     public IEnumerator MulScore()
     {
         isMulScore = true;
         MulTime += 5f;
-        UIManager.instance.MulText.text = "X" +ScoreMul;
+        UIManager.instance.MulText.text = "X" + ScoreMul;
         while (true)
         {
             yield return new WaitForSecondsRealtime(Time.deltaTime);
@@ -64,27 +95,4 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    //public void Insertscore()
-    //{
-    //    Debug.Log("점수넣기");
-    //    StartCoroutine(_InsertScore());
-    //}
-
-
-
-    //IEnumerator _InsertScore()
-    //{
-    //    Debug.Log("Start");
-    //    WWWForm form = new WWWForm();
-    //    //form.AddField("nick_name",)
-    //    form.AddField("score", Score);
-    //    //form.AddField("nick_name", "test");
-
-    //    WWW webRequest = new WWW(url, form);
-    //    yield return webRequest;
-
-    //    Debug.Log(webRequest.error);
-    //    yield break;
-    //}
 }

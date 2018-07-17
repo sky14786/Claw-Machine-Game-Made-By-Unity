@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bodycontroller : MonoBehaviour
+public class BodyController : MonoBehaviour
 {
-
-    // Use this for initialization
     void Start()
     {
         GameManager.instance.MoveSpeed = 0.1f;
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.DownArrow))
@@ -32,16 +28,12 @@ public class bodycontroller : MonoBehaviour
         }
         else
             GameManager.instance.MoveSpeed = 0.1f;
-    
     }
 
     void moveUp()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            //Debug.Log("UpArrow position x : " + transform.position.x);
-            //Debug.Log("UpArrow position y : " + transform.position.y);
-
             if (transform.position.y < 1.076795f)
                 gameObject.transform.Translate(0, GameManager.instance.MoveSpeed, 0);
         }
@@ -62,8 +54,6 @@ public class bodycontroller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //Debug.Log("LeftArrow position x : " + transform.position.x);
-            //Debug.Log("LeftArrow position y : " + transform.position.y);
             if (transform.position.x > -7.8178f)
                 gameObject.transform.Translate(-GameManager.instance.MoveSpeed, 0, 0);
         }
@@ -73,8 +63,6 @@ public class bodycontroller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-
-
             if (transform.position.x > 0.582197f && transform.position.y < -3.0f && transform.position.x < 2.2f)
             {
             }
