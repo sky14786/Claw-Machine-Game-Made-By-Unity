@@ -7,9 +7,10 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     public Text ScoreText, MulText;
-	public GameObject DeadEffect, RankPanel, InsertScorePanel;
+    public GameObject DeadEffect, RankPanel, InsertScorePanel;
     public Slider GameTimer;
-    
+    public Image MuteButton;
+    public Sprite SoundOn, SoundOff;
     private void Awake()
     {
         if (instance == null)
@@ -21,6 +22,15 @@ public class UIManager : MonoBehaviour
     }
     public void Update()
     {
-       ScoreText.text = "Score : " + GameManager.instance.Score.ToString();
+        ScoreText.text = "Score : " + GameManager.instance.Score.ToString();
+    }
+
+    public void _UISound(bool ismMute)
+    {
+        if (ismMute)
+            MuteButton.sprite = SoundOff;
+        else
+            MuteButton.sprite = SoundOn;
+
     }
 }

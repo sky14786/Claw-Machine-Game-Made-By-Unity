@@ -1094,6 +1094,9 @@ MonoBehaviour:
   RankPanel: {fileID: 0}
   InsertScorePanel: {fileID: 0}
   GameTimer: {fileID: 1605020498}
+  MuteButton: {fileID: 1550256345}
+  SoundOn: {fileID: 21300000, guid: 315866986b08de348887d5db06818a6a, type: 3}
+  SoundOff: {fileID: 21300000, guid: 574c3f54ed2601846b2e8e0d7c5ce4f5, type: 3}
 --- !u!1001 &940141831
 Prefab:
   m_ObjectHideFlags: 0
@@ -1472,49 +1475,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1037020219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1037020221}
-  - component: {fileID: 1037020220}
-  m_Layer: 0
-  m_Name: EffectManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1037020220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1037020219}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50507829f4453084f9267bc034d2634e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleList: []
-  EffectPoint: {fileID: 1873172127}
-  G: {fileID: 0}
---- !u!4 &1037020221
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1037020219}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040009529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1663,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc59d1391e77bcf41a75134c432bcc4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMute: 0
   AudioObj: {fileID: 1175846395}
+  Bg_Music: {fileID: 433636820}
   Make_Sound: {fileID: 8300000, guid: 48578c9124dc8a646a9753605fe6c55a, type: 3}
   Dead_Sound: {fileID: 8300000, guid: 61816639968fb014e805195e210675f6, type: 3}
 --- !u!4 &1175846394
@@ -2260,7 +2222,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1175846393}
-        m_MethodName: BG_Mute
+        m_MethodName: _MuteManager
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
