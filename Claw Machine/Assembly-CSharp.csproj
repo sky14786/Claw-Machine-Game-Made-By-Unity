@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\InsertGameScore.cs" />
      <Compile Include="Assets\Scripts\JsonRoadRank.cs" />
      <Compile Include="Assets\Scripts\LoadGameRank.cs" />
+     <Compile Include="Assets\Scripts\MobileMovementManager.cs" />
      <Compile Include="Assets\Scripts\MoveScene.cs" />
      <Compile Include="Assets\Scripts\ParticleManager.cs" />
      <Compile Include="Assets\Scripts\SceneAdmin.cs" />
