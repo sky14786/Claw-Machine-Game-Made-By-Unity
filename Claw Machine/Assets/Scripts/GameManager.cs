@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public GameObject EffectPoint;
     public float MoveSpeed, PowerTime, GameTime, MulTime, Onesec=1;
     public int ddolsCount = 0, itemddolsCount =0, ScoreMul=1, Score=0;
     public bool isMulScore;

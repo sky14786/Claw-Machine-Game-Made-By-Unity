@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EffectMaker : MonoBehaviour
+{
+    public static EffectMaker instance;
+
+    public GameObject EffectPoint;
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+    public void MakeOfEffect(int a)
+    {
+        switch (a)
+        {
+            case 1:
+                GameObject DdolsDead = Instantiate(Resources.Load("Hearts_02") as GameObject);
+                DdolsDead.transform.position = EffectPoint.transform.position;
+                break;
+            case 2:
+                GameObject ItemsDead = Instantiate(Resources.Load("Fx_OilSplashHIGH_Root") as GameObject);
+                ItemsDead.transform.position = EffectPoint.transform.position;
+                break;
+        }
+
+    }
+
+}

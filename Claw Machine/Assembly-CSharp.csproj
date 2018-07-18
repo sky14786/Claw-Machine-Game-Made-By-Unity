@@ -69,13 +69,14 @@
      <Compile Include="Assets\Scripts\ClawController.cs" />
      <Compile Include="Assets\Scripts\CreatePointScripts.cs" />
      <Compile Include="Assets\Scripts\DestroyPointScripts.cs" />
-     <Compile Include="Assets\Scripts\EffectManager.cs" />
+     <Compile Include="Assets\Scripts\EffectMaker.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameTimer.cs" />
      <Compile Include="Assets\Scripts\InsertGameScore.cs" />
      <Compile Include="Assets\Scripts\JsonRoadRank.cs" />
      <Compile Include="Assets\Scripts\LoadGameRank.cs" />
      <Compile Include="Assets\Scripts\MoveScene.cs" />
+     <Compile Include="Assets\Scripts\ParticleManager.cs" />
      <Compile Include="Assets\Scripts\SceneAdmin.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />

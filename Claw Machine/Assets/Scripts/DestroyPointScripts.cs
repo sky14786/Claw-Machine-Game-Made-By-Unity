@@ -29,7 +29,7 @@ public class DestroyPointScripts : MonoBehaviour
                     break;
             }
             Destroy(collision.gameObject);
-            EffectManager.instance._EfOn(1);
+            EffectMaker.instance.MakeOfEffect(1);
             GameManager.instance.ddolsCount--;
             SoundManager.instance._DeadSound();
             
@@ -81,7 +81,7 @@ public class DestroyPointScripts : MonoBehaviour
                     break;
             }
             Destroy(collision.gameObject);
-            EffectManager.instance._EfOn(2);
+            EffectMaker.instance.MakeOfEffect(2);
             GameManager.instance.itemddolsCount--;
             SoundManager.instance._DeadSound();
             //Destroy(Effect);
