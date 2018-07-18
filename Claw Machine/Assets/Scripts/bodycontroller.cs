@@ -6,7 +6,7 @@ public class BodyController : MonoBehaviour
 {
     void Start()
     {
-        GameManager.instance.MoveSpeed = 0.1f;
+        GameManager.Instance.MoveSpeed = 0.1f;
     }
     void FixedUpdate()
     {
@@ -32,20 +32,20 @@ public class BodyController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.PowerTime >= 0)
+        if (GameManager.Instance.PowerTime >= 0)
         {
-            GameManager.instance.MoveSpeed = 0.2f;
-            GameManager.instance.PowerTime -= Time.deltaTime;
+            GameManager.Instance.MoveSpeed = 0.2f;
+            GameManager.Instance.PowerTime -= Time.deltaTime;
         }
         else
-            GameManager.instance.MoveSpeed = 0.1f;
+            GameManager.Instance.MoveSpeed = 0.1f;
     }
 
     public void moveUp()
     {
 
         if (transform.position.y < 1.076795f)
-            gameObject.transform.Translate(0, GameManager.instance.MoveSpeed, 0);
+            gameObject.transform.Translate(0, GameManager.Instance.MoveSpeed, 0);
 
     }
     public void moveDown()
@@ -55,7 +55,7 @@ public class BodyController : MonoBehaviour
         else
         {
             if (transform.position.y >= -5.4f)
-                gameObject.transform.Translate(0, -GameManager.instance.MoveSpeed, 0);
+                gameObject.transform.Translate(0, -GameManager.Instance.MoveSpeed, 0);
         }
 
     }
@@ -63,7 +63,7 @@ public class BodyController : MonoBehaviour
     {
 
         if (transform.position.x > -7.8178f)
-            gameObject.transform.Translate(-GameManager.instance.MoveSpeed, 0, 0);
+            gameObject.transform.Translate(-GameManager.Instance.MoveSpeed, 0, 0);
 
     }
 
@@ -77,7 +77,7 @@ public class BodyController : MonoBehaviour
         {
             if (transform.position.x < 6.382194f)
             {
-                gameObject.transform.Translate(GameManager.instance.MoveSpeed, 0, 0);
+                gameObject.transform.Translate(GameManager.Instance.MoveSpeed, 0, 0);
             }
         }
 

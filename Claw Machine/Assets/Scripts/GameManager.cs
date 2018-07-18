@@ -6,7 +6,23 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    //private 
+    private static GameManager instance;
+
+    public static GameManager Instance //GameManager.Instance.변수
+    { 
+        get
+        {
+            if (instance == null)
+            {
+                instance = new GameManager();
+            }
+            return instance;
+        }
+      
+    }
+    
+
 
     public GameObject EffectPoint;
     public float MoveSpeed, PowerTime, GameTime, MulTime, Onesec=1;
@@ -32,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (SceneAdmin.instance.SceneNum == 2)
+        if (SceneAdmin.Instance.SceneNum == 2)
         {
             if (GameTime >= 0)
                 PlayingTimeControl();
@@ -48,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Time Setting Success!");
         GameTime = 15f;
-        UIManager.instance.GameTimer.value = 15f;
+        UIManager.Instance.GameTimer.value = 15f;
         ScoreMul = 1;
     }
     void PlayingTimeControl()
@@ -61,13 +77,13 @@ public class GameManager : MonoBehaviour
         {
             Onesec = 1f;
             GameTime -= 1f;
-            UIManager.instance.GameTimer.value -= 1f;
+            UIManager.Instance.GameTimer.value -= 1f;
         }
     }
     void EndGameControl()
     {
         Debug.Log("게임끔");
-        SceneAdmin.instance.EndScene();
+        SceneAdmin.Instance.EndScene();
     }
 
 
@@ -82,14 +98,14 @@ public class GameManager : MonoBehaviour
     {
         isMulScore = true;
         MulTime += 5f;
-        UIManager.instance.MulText.text = "X" + ScoreMul;
+        UIManager.Instance.MulText.text = "X" + ScoreMul;
         while (true)
         {
             yield return new WaitForSecondsRealtime(Time.deltaTime);
             MulTime -= Time.deltaTime;
             if (MulTime <= 0f)
             {
-                UIManager.instance.MulText.text = "X1";
+                UIManager.Instance.MulText.text = "X1";
                 isMulScore = false;
                 ScoreMul = 1;
                 break;
