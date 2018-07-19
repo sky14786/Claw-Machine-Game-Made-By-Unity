@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     public void ResetManager()
     {
         PowerTime = 0;
-        GameTime = 15;
+        GameTime = 45;
         MulTime = 0;
         Onesec = 1;
         dollsCount = 0;
@@ -69,8 +69,8 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         Debug.Log("Game Time Setting Success!");
-        GameTime = 15f;
-        UIManager.Instance.GameTimer.value = 15f;
+        GameTime = 45f;
+        UIManager.Instance.GameTimer.value = 45f;
         ScoreMul = 1;
     }
     void PlayingTimeControl()

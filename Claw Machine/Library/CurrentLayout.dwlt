@@ -67,10 +67,10 @@ MonoBehaviour:
     y: 446
     width: 1423
     height: 485
-  m_MinSize: {x: 334, y: 271}
-  m_MaxSize: {x: 14004, y: 10021}
+  m_MinSize: {x: 336, y: 271}
+  m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 57
+  controlID: 88
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 601
     height: 446
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -116,10 +116,10 @@ MonoBehaviour:
     y: 0
     width: 1423
     height: 446
-  m_MinSize: {x: 302, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 306, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 13
+  controlID: 30
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,8 +138,8 @@ MonoBehaviour:
     y: 0
     width: 688
     height: 485
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -165,10 +165,10 @@ MonoBehaviour:
     y: 0
     width: 1423
     height: 931
-  m_MinSize: {x: 334, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 336, y: 492}
+  m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 29
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,10 +234,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 809, y: 492}
-  m_MaxSize: {x: 22004, y: 14042}
+  m_MinSize: {x: 817, y: 492}
+  m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
-  controlID: 107
+  controlID: 151
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,8 +276,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 931
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -301,8 +301,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 931
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -326,8 +326,8 @@ MonoBehaviour:
     y: 0
     width: 822
     height: 446
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -561,7 +561,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 822ffeff8e3dfeff5cc0feffa6c8feff4218ffff0226ffff0a47ffffb265ffff8e9dffff48cfffffb2f4fffff0fbfffff4ffffff00000000
+    m_ExpandedIDs: 38f8fffff0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,7 +580,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
   m_ExpandedScenes:
-  - StartScene
+  - Main
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -656,20 +656,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Particle
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Particle
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Jmstyle\Desktop\Git\Claw Machine
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c2a0000
-    m_LastClickedID: 10812
-    m_ExpandedIDs: 0000000090290000ba2c0000d82f0000f42f0000c8320000ca320000cc320000ce320000d0320000d2320000d4320000d6320000d832000000ca9a3bffffff7f
+    m_SelectedIDs: f02c0000
+    m_LastClickedID: 11504
+    m_ExpandedIDs: 0000000092290000bc2c0000da2f0000f62f00006431000066310000683100006a3100006c3100006e31000070310000723100007431000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000090290000ba2c0000d82f0000f42f0000c8320000ca320000cc320000ce320000d0320000d2320000d4320000d6320000d8320000
+    m_ExpandedIDs: 0000000092290000bc2c0000da2f0000f62f00006431000066310000683100006a3100006c3100006e310000703100007231000074310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -8,6 +8,8 @@ public class ClawController : MonoBehaviour
     public float angle;
     public bool isLeft, isPlaying;
 
+    bool isCo = false;
+
     void FixedUpdate()
     {
         angle = transform.localEulerAngles.z;
@@ -17,15 +19,15 @@ public class ClawController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
                 StartCoroutine(_Tighten());
-            //if (MobileMovementManager.instance.tightn)
-            //    StartCoroutine(_Tighten()); 
+            if (MobileMovementManager.Instance.tightn && !isCo)
+                StartCoroutine(_Tighten());
         }
         else
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
                 StartCoroutine(_Untie());
-            //if (!MobileMovementManager.instance.tightn)
-            //    StartCoroutine(_Untie());
+            if (MobileMovementManager.Instance.untie && !isCo)
+                StartCoroutine(_Untie());
         }
 
     }
@@ -63,6 +65,7 @@ public class ClawController : MonoBehaviour
     }
     public IEnumerator _Tighten()
     {
+        isCo = true;
 
         while (true)
         {
@@ -92,11 +95,12 @@ public class ClawController : MonoBehaviour
 
             }
         }
-
+        isCo = false;
     }
     public IEnumerator _Untie()
     {
-
+        isCo = true;
+        Debug.Log("asdfasdfasdfasdfasdf     1");
         while (true)
         {
             yield return new WaitForSecondsRealtime(Time.deltaTime);
@@ -126,6 +130,6 @@ public class ClawController : MonoBehaviour
             }
 
         }
-
+        isCo = false;
     }
 }

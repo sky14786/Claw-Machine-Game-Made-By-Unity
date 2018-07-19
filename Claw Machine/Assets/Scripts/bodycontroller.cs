@@ -19,14 +19,14 @@ public class BodyController : MonoBehaviour
             moveLeft();
         if (Input.GetKey(KeyCode.RightArrow))
             moveRight();
-        //if (MobileMovementManager.instance.down)
-        //    moveDown();
-        //if (MobileMovementManager.instance.up)
-        //    moveUp();
-        //if (MobileMovementManager.instance.left)
-        //    moveLeft();
-        //if (MobileMovementManager.instance.right)
-        //    moveRight();
+        if (MobileMovementManager.Instance.down)
+            moveDown();
+        if (MobileMovementManager.Instance.up)
+            moveUp();
+        if (MobileMovementManager.Instance.left)
+            moveLeft();
+        if (MobileMovementManager.Instance.right)
+            moveRight();
     }
 
 

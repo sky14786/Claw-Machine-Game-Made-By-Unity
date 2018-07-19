@@ -3,8 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MobileMovementManager : MonoBehaviour {
-    public static MobileMovementManager instance;
+    private static MobileMovementManager instance;
     public bool up, down, left, right,tightn,untie;
+
+    public static MobileMovementManager Instance
+    {
+        get
+        {
+            if(instance == null)
+            {
+                instance = new MobileMovementManager();
+            }
+            return instance;
+        }
+    }
 
     private void Awake()
     {
@@ -46,13 +58,19 @@ public class MobileMovementManager : MonoBehaviour {
         if (tightn)
             tightn = false;
         else
+        {
             tightn = true;
+            untie = false;
+        }
     }
     public void _untie()
     {
         if (untie)
             untie = false;
         else
+        {
             untie = true;
+            tightn = false;
+        }
     }
 }
