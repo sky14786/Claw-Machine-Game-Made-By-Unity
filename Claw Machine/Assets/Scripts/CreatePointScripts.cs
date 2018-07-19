@@ -17,11 +17,11 @@ public class CreatePointScripts : MonoBehaviour
         ItemNum = Random.Range(1, 5);
         ddolsNum = Random.Range(1, 6);
 
-        if (GameManager.Instance.ddolsCount <= 10)
+        if (GameManager.Instance.dollsCount <= 10)
         {
             make();
         }
-        if (GameManager.Instance.itemddolsCount <= 5)
+        if (GameManager.Instance.itemdollsCount <= 5)
         {
             itemmake();
         }
@@ -36,7 +36,7 @@ public class CreatePointScripts : MonoBehaviour
             GameObject G = Instantiate(Resources.Load("ddols" +ddolsNum)) as GameObject;
             G.transform.position = gameObject.transform.position;
             G.GetComponent<Rigidbody2D>().AddForce(new Vector2(shootPower, shootPower));
-            GameManager.Instance.ddolsCount++;
+            GameManager.Instance.dollsCount++;
             SoundManager.Instance._MakeSound();
             //Debug.Log("ddols : " + GameManager.instance.ddolsCount);
         }
@@ -51,7 +51,7 @@ public class CreatePointScripts : MonoBehaviour
             GameObject I = Instantiate(Resources.Load("item" + ItemNum)) as GameObject;
             I.transform.position = gameObject.transform.position;
             I.GetComponent<Rigidbody2D>().AddForce(new Vector2(shootPower, shootPower));
-            GameManager.Instance.itemddolsCount++;
+            GameManager.Instance.itemdollsCount++;
             SoundManager.Instance._MakeSound();
 			//Debug.Log("ddols : " + GameManager.instance.ddolsCount);
 		}

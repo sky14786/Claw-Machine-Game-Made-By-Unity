@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject EffectPoint;
     public float MoveSpeed, PowerTime, GameTime, MulTime, Onesec=1;
-    public int ddolsCount = 0, itemddolsCount =0, ScoreMul=1, Score=0;
+    public int dollsCount = 0, itemdollsCount = 0, ScoreMul=1, Score=0;
     public bool isMulScore;
 
     public static GameManager Instance
@@ -31,8 +31,8 @@ public class GameManager : MonoBehaviour
         GameTime = 15;
         MulTime = 0;
         Onesec = 1;
-        ddolsCount = 0;
-        itemddolsCount = 0;
+        dollsCount = 0;
+        itemdollsCount = 0;
         ScoreMul = 1;
         Score = 0;
         MoveSpeed = 0.1f;

@@ -30,7 +30,7 @@ public class DestroyPointScripts : MonoBehaviour
             }
             Destroy(collision.gameObject);
             EffectMaker.Instance.MakeOfEffect(1);
-            GameManager.Instance.ddolsCount--;
+            GameManager.Instance.dollsCount--;
             SoundManager.Instance._DeadSound();
             
         }
@@ -82,7 +82,7 @@ public class DestroyPointScripts : MonoBehaviour
             }
             Destroy(collision.gameObject);
             EffectMaker.Instance.MakeOfEffect(2);
-            GameManager.Instance.itemddolsCount--;
+            GameManager.Instance.itemdollsCount--;
             SoundManager.Instance._DeadSound();
             //Destroy(Effect);
 
