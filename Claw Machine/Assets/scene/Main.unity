@@ -1227,8 +1227,8 @@ MonoBehaviour:
   GameTime: 0
   MulTime: 0
   Onesec: 1
-  ddolsCount: 0
-  itemddolsCount: 0
+  dollsCount: 0
+  itemdollsCount: 0
   ScoreMul: 0
   Score: 0
   isMulScore: 0
@@ -1336,7 +1336,7 @@ Prefab:
     - target: {fileID: 198858562690846188, guid: 968c924d2be019d4b9e67647551eec3e,
         type: 2}
       propertyPath: randomSeed
-      value: -1745658226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198858562690846188, guid: 968c924d2be019d4b9e67647551eec3e,
         type: 2}
