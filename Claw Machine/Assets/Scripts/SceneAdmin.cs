@@ -5,25 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneAdmin : MonoBehaviour
 {
-    private static SceneAdmin instance;
-
-    public static SceneAdmin Instance
-    {
-        get
-        {
-            if(instance ==null)
-            {
-                instance = new SceneAdmin();
-            }
-            return instance;
-        }
-    }
+    public static SceneAdmin instance;
     public int SceneNum;
 
     private void Awake()
     {
         if (instance == null)
         {
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -47,7 +36,7 @@ public class SceneAdmin : MonoBehaviour
     {
         SceneNum = 3;
         SceneManager.LoadScene("EndScene");
-        Destroy(UIManager.Instance.gameObject);
-        Destroy(GameManager.Instance.gameObject);
+        Destroy(UIManager.instance.gameObject);
+        Destroy(GameManager.instance.gameObject);
     }
 }

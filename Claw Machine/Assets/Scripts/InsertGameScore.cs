@@ -14,7 +14,7 @@ public class InsertGameScore : MonoBehaviour {
     {
         url = "sky14786.cafe24.com/DB_Score_insert.php";
         //insert_score = SceneAdmin.instance.temp_score;
-        scoretxt.text = ("Your Score : " + GameManager.Instance.Score.ToString());
+        scoretxt.text = ("Your Score : " + GameManager.instance.Score.ToString());
 		isinsertRank = true;
         Panel.active = false;
         nick_name.text ="Insert Your Nick_name";
@@ -41,7 +41,7 @@ public class InsertGameScore : MonoBehaviour {
            nick_name.text = "Human"+Random.Range(1,99).ToString();
 
         form.AddField("nick_name", nick_name.text);
-        form.AddField("score", GameManager.Instance.Score);
+        form.AddField("score", GameManager.instance.Score);
         
 
         WWW webRequest = new WWW(url, form);
