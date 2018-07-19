@@ -13,25 +13,25 @@ public class DestroyPointScripts : MonoBehaviour
             switch (collision.gameObject.name)
             {
                 case "ddols1(Clone)":
-                    GameManager.instance.Score = GameManager.instance.Score + (GameManager.instance.ScoreMul * 1);
+                    GameManager.Instance.Score = GameManager.Instance.Score + (GameManager.Instance.ScoreMul * 1);
                     break;
                 case "ddols2(Clone)":
-                    GameManager.instance.Score = GameManager.instance.Score + (GameManager.instance.ScoreMul * 2);
+                    GameManager.Instance.Score = GameManager.Instance.Score + (GameManager.Instance.ScoreMul * 2);
                     break;
                 case "ddols3(Clone)":
-                    GameManager.instance.Score = GameManager.instance.Score + (GameManager.instance.ScoreMul * 3);
+                    GameManager.Instance.Score = GameManager.Instance.Score + (GameManager.Instance.ScoreMul * 3);
                     break;
                 case "ddols4(Clone)":
-                    GameManager.instance.Score = GameManager.instance.Score + (GameManager.instance.ScoreMul * 4);
+                    GameManager.Instance.Score = GameManager.Instance.Score + (GameManager.Instance.ScoreMul * 4);
                     break;
                 case "ddols5(Clone)":
-                    GameManager.instance.Score = GameManager.instance.Score + (GameManager.instance.ScoreMul * 5);
+                    GameManager.Instance.Score = GameManager.Instance.Score + (GameManager.Instance.ScoreMul * 5);
                     break;
             }
             Destroy(collision.gameObject);
-            EffectMaker.instance.MakeOfEffect(1);
-            GameManager.instance.ddolsCount--;
-            SoundManager.instance._DeadSound();
+            EffectMaker.Instance.MakeOfEffect(1);
+            GameManager.Instance.ddolsCount--;
+            SoundManager.Instance._DeadSound();
             
         }
 
@@ -40,50 +40,50 @@ public class DestroyPointScripts : MonoBehaviour
             switch (collision.gameObject.name)
             {//  angle = (angle > 180) ? angle - 360 : angle;
                 case "item1(Clone)":
-                    if (GameManager.instance.isMulScore)
-                        GameManager.instance.MulTime += 3;
+                    if (GameManager.Instance.isMulScore)
+                        GameManager.Instance.MulTime += 3;
                     else
                     {
-                        GameManager.instance.ScoreMul = 2;
-                        StartCoroutine(GameManager.instance.MulScore());
+                        GameManager.Instance.ScoreMul = 2;
+                        StartCoroutine(GameManager.Instance.MulScore());
                     }
                     break;
                 case "item2(Clone)":
-                    if (GameManager.instance.isMulScore)
+                    if (GameManager.Instance.isMulScore)
                     {
-                        if (GameManager.instance.ScoreMul < 3)
+                        if (GameManager.Instance.ScoreMul < 3)
                         {
-                            GameManager.instance.ScoreMul = 3;
-                            StartCoroutine(GameManager.instance.MulScore());
+                            GameManager.Instance.ScoreMul = 3;
+                            StartCoroutine(GameManager.Instance.MulScore());
                         }
                         else
-                            GameManager.instance.MulTime += 3;
+                            GameManager.Instance.MulTime += 3;
                     }
                     else
                     {
-                        GameManager.instance.ScoreMul = 3;
-                        StartCoroutine(GameManager.instance.MulScore());
+                        GameManager.Instance.ScoreMul = 3;
+                        StartCoroutine(GameManager.Instance.MulScore());
                     }
                     break;
                 case "item3(Clone)":
-                    if (UIManager.instance.GameTimer.value <= UIManager.instance.GameTimer.maxValue)
+                    if (UIManager.Instance.GameTimer.value <= UIManager.Instance.GameTimer.maxValue)
                     {
-                        if (GameManager.instance.GameTime <= UIManager.instance.GameTimer.maxValue)
+                        if (GameManager.Instance.GameTime <= UIManager.Instance.GameTimer.maxValue)
                         {
-                            GameManager.instance.GameTime = +3f;
-                            UIManager.instance.GameTimer.value += 3f;
-                            Debug.Log(UIManager.instance.GameTimer.value);
+                            GameManager.Instance.GameTime = +3f;
+                            UIManager.Instance.GameTimer.value += 3f;
+                            Debug.Log(UIManager.Instance.GameTimer.value);
                         }
                     }
                     break;
                 case "item4(Clone)":
-                    GameManager.instance.PowerTime = +5f;
+                    GameManager.Instance.PowerTime = +5f;
                     break;
             }
             Destroy(collision.gameObject);
-            EffectMaker.instance.MakeOfEffect(2);
-            GameManager.instance.itemddolsCount--;
-            SoundManager.instance._DeadSound();
+            EffectMaker.Instance.MakeOfEffect(2);
+            GameManager.Instance.itemddolsCount--;
+            SoundManager.Instance._DeadSound();
             //Destroy(Effect);
 
         }

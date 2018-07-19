@@ -6,10 +6,10 @@ public class MoveScene : MonoBehaviour {
 
 	public void MoveStart()
     {
-        SceneAdmin.instance.StartScene();
+        SceneAdmin.Instance.StartScene();
     }
     public void MoveMain()
     {
-        SceneAdmin.instance.MainScene();
+        SceneAdmin.Instance.MainScene();
     }
 }

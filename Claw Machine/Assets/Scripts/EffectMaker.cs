@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class EffectMaker : MonoBehaviour
 {
-    public static EffectMaker instance;
+    private static EffectMaker instance;
+
+    public static EffectMaker Instance
+    {
+        get
+        {
+            if(instance==null)
+            {
+                instance = new EffectMaker();
+            }
+            return instance;
+        }
+    }
+    
 
     public GameObject EffectPoint;
     public void Awake()

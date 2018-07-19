@@ -5,10 +5,22 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance;
+    private static SoundManager instance;
     public bool isMute=false;
     public AudioSource AudioObj,Bg_Music;
     public AudioClip Make_Sound,Dead_Sound;
+
+    public static SoundManager Instance
+    {
+        get
+        {
+            if(instance==null)
+            {
+                instance = new SoundManager();
+            }
+            return instance;
+        }
+    }
 
     private void Awake()
     {
@@ -39,7 +51,7 @@ public class SoundManager : MonoBehaviour
             AudioObj.mute = false;
             Bg_Music.mute = false;
             isMute = false;
-            UIManager.instance._UISound(false);
+            UIManager.Instance._UISound(false);
             
         }
         else
@@ -47,7 +59,7 @@ public class SoundManager : MonoBehaviour
             AudioObj.mute = true;
             Bg_Music.mute = true;
             isMute = true;
-            UIManager.instance._UISound(true);
+            UIManager.Instance._UISound(true);
         }
     }
 

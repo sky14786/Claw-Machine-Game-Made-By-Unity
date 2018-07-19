@@ -55,10 +55,10 @@
   <ItemGroup>
      <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Jmstyle/Desktop/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw Machine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Jmstyle/Desktop/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw Machine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -301,13 +301,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="JMOAssets">
- <HintPath>C:/Users/Jmstyle/Desktop/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw Machine/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
  </Reference>
  <Reference Include="JMOAssets_CartoonFXFreeWelcome">
- <HintPath>C:/Users/Jmstyle/Desktop/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw Machine/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>C:/Users/Jmstyle/Desktop/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw-Machine-Game-Made-By-Unity-43989eb4501605ff8edf9f91335b4b9316bd9174/Claw Machine/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>C:/Users/Jmstyle/Desktop/Git/Claw Machine/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Jmstyle/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
