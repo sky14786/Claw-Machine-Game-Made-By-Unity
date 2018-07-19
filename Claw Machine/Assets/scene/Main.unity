@@ -1203,7 +1203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 800393964}
   - component: {fileID: 800393963}
-  - component: {fileID: 800393965}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1246,12 +1245,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &800393965
+--- !u!1 &909466638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 909466640}
+  - component: {fileID: 909466639}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &909466639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800393962}
+  m_GameObject: {fileID: 909466638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1220ae74abc3d145ae783e147875543, type: 3}
@@ -1266,6 +1281,19 @@ MonoBehaviour:
   MuteButton: {fileID: 1550256345}
   SoundOn: {fileID: 21300000, guid: 315866986b08de348887d5db06818a6a, type: 3}
   SoundOff: {fileID: 21300000, guid: 574c3f54ed2601846b2e8e0d7c5ce4f5, type: 3}
+--- !u!4 &909466640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909466638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.03, y: -3.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &940141831
 Prefab:
   m_ObjectHideFlags: 0

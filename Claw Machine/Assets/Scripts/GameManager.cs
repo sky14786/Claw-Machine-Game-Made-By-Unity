@@ -25,6 +25,18 @@ public class GameManager : MonoBehaviour
         }
     }
     
+    public void ResetManager()
+    {
+        PowerTime = 0;
+        GameTime = 15;
+        MulTime = 0;
+        Onesec = 1;
+        ddolsCount = 0;
+        itemddolsCount = 0;
+        ScoreMul = 1;
+        Score = 0;
+        MoveSpeed = 0.1f;
+    }
 
     public void Awake()
     {

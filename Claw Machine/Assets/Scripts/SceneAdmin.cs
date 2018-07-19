@@ -36,6 +36,7 @@ public class SceneAdmin : MonoBehaviour
 
     public void MainScene()
     {
+        GameManager.Instance.ResetManager();
         SceneNum = 2;
         SceneManager.LoadScene("Main");
     }
@@ -49,6 +50,7 @@ public class SceneAdmin : MonoBehaviour
         SceneNum = 3;
         SceneManager.LoadScene("EndScene");
         Destroy(UIManager.Instance.gameObject);
-        Destroy(GameManager.Instance.gameObject);
+        //Destroy(GameManager.Instance.gameObject);
+
     }
 }
