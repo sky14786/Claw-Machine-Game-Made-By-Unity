@@ -5,10 +5,24 @@ using UnityEngine;
 public class ClawController : MonoBehaviour
 {
 
+    private static ClawController instance;
+
+    public static ClawController Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new ClawController();
+            }
+            return instance;
+        }
+    }
+
     public float angle;
     public bool isLeft, isPlaying;
 
-    bool isCo = false;
+    public bool isCo = false;
 
     void FixedUpdate()
     {
@@ -17,14 +31,14 @@ public class ClawController : MonoBehaviour
 
         if (isPlaying)
         {
-            if (Input.GetKeyDown(KeyCode.LeftControl))
+            if (Input.GetKeyUp(KeyCode.LeftControl))
                 StartCoroutine(_Tighten());
             if (MobileMovementManager.Instance.tightn && !isCo)
                 StartCoroutine(_Tighten());
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKeyUp(KeyCode.LeftShift))
                 StartCoroutine(_Untie());
             if (MobileMovementManager.Instance.untie && !isCo)
                 StartCoroutine(_Untie());
@@ -34,6 +48,7 @@ public class ClawController : MonoBehaviour
     void Awake()
     {
         isPlaying = true;
+        
     }
 
     void Tighten()
@@ -65,6 +80,7 @@ public class ClawController : MonoBehaviour
     }
     public IEnumerator _Tighten()
     {
+        Debug.Log("조이기코루틴");
         isCo = true;
 
         while (true)
@@ -72,7 +88,7 @@ public class ClawController : MonoBehaviour
             yield return new WaitForSecondsRealtime(Time.deltaTime);
             if (isLeft)
             {
-                if (angle > -13f && angle <= 43f)
+                if (angle > -19f && angle <= 43f)
                     transform.Rotate(0, 0, 2f);
                 else
                 {
@@ -84,7 +100,7 @@ public class ClawController : MonoBehaviour
             }
             else
             {
-                if (angle < 13f && angle >= -43f)
+                if (angle < 19f && angle >= -43f)
                     transform.Rotate(0, 0, -2f);
                 else
                 {
@@ -99,14 +115,15 @@ public class ClawController : MonoBehaviour
     }
     public IEnumerator _Untie()
     {
+              Debug.Log("풀기코루틴");
         isCo = true;
-        Debug.Log("asdfasdfasdfasdfasdf     1");
+      
         while (true)
         {
             yield return new WaitForSecondsRealtime(Time.deltaTime);
             if (isLeft)
             {
-                if (angle > -11f && angle < 45f)
+                if (angle > -15f && angle < 47f)
                     transform.Rotate(0, 0, -2f);
                 else
                 {
@@ -118,7 +135,7 @@ public class ClawController : MonoBehaviour
             }
             else
             {
-                if (angle < 11f && angle > -45f)
+                if (angle < 15f && angle > -47f)
                     transform.Rotate(0, 0, 2f);
                 else
                 {

@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     private static UIManager instance;
     public Text ScoreText, MulText;
-    public GameObject DeadEffect, RankPanel, InsertScorePanel;
+    public GameObject RankPanel, InsertScorePanel;
     public Slider GameTimer;
     public Image MuteButton;
     public Sprite SoundOn, SoundOff;
@@ -37,11 +37,12 @@ public class UIManager : MonoBehaviour
     public void Update()
     {
         ScoreText.text = "Score : " + GameManager.Instance.Score.ToString();
+        
     }
 
-    public void _UISound(bool ismMute)
+    public void _UISound(bool isMute)
     {
-        if (ismMute)
+        if (isMute)
             MuteButton.sprite = SoundOff;
         else
             MuteButton.sprite = SoundOn;
