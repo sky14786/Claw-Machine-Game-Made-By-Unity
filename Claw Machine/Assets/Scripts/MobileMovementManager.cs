@@ -55,7 +55,6 @@ public class MobileMovementManager : MonoBehaviour {
     }
     public void _tightn()
     {
-
         if (tightn)
             tightn = false;
         else
@@ -66,7 +65,6 @@ public class MobileMovementManager : MonoBehaviour {
     }
     public void _untie()
     {
-
         if (untie)
             untie = false;
         else

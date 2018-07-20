@@ -70,7 +70,7 @@ public class DestroyPointScripts : MonoBehaviour
                     {
                         if (GameManager.Instance.GameTime <= UIManager.Instance.GameTimer.maxValue)
                         {
-                            GameManager.Instance.GameTime += 3f;
+                            GameManager.Instance.GameTime = +3f;
                             UIManager.Instance.GameTimer.value += 3f;
                             Debug.Log(UIManager.Instance.GameTimer.value);
                         }

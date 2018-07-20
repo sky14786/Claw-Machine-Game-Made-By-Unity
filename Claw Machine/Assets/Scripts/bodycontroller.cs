@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BodyController : MonoBehaviour
 {
-   
     void Start()
     {
         GameManager.Instance.MoveSpeed = 0.1f;
@@ -44,7 +43,7 @@ public class BodyController : MonoBehaviour
 
     public void moveUp()
     {
-        
+
         if (transform.position.y < 1.076795f)
             gameObject.transform.Translate(0, GameManager.Instance.MoveSpeed, 0);
 

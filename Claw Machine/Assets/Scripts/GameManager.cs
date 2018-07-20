@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
-    
+
     public GameObject EffectPoint;
     public float MoveSpeed, PowerTime, GameTime, MulTime, Onesec=1;
     public int dollsCount = 0, itemdollsCount = 0, ScoreMul=1, Score=0;
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
+    
     public void ResetManager()
     {
         PowerTime = 0;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         Score = 0;
         MoveSpeed = 0.1f;
     }
+
     public void Awake()
     {
         if (instance == null)
@@ -49,6 +51,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     public void Update()
     {
         if (SceneAdmin.Instance.SceneNum == 2)
@@ -62,6 +65,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     public void Start()
     {
         Debug.Log("Game Time Setting Success!");
@@ -87,6 +91,15 @@ public class GameManager : MonoBehaviour
         Debug.Log("게임끔");
         SceneAdmin.Instance.EndScene();
     }
+
+
+
+
+
+
+
+
+
     public IEnumerator MulScore()
     {
         isMulScore = true;
