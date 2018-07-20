@@ -39,6 +39,8 @@ public class SceneAdmin : MonoBehaviour
         GameManager.Instance.ResetManager();
         SceneNum = 2;
         SceneManager.LoadScene("Main");
+        SoundManager.Instance._UnMute();
+        SoundManager.Instance._ResetMusic();
     }
     public void StartScene()
     {
@@ -50,7 +52,7 @@ public class SceneAdmin : MonoBehaviour
         SceneNum = 3;
         SceneManager.LoadScene("EndScene");
         Destroy(UIManager.Instance.gameObject);
-        //Destroy(GameManager.Instance.gameObject);
+        SoundManager.Instance._Mute();
 
     }
 }

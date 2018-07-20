@@ -44,25 +44,26 @@ public class SoundManager : MonoBehaviour
     {
         AudioObj.PlayOneShot(Dead_Sound);
     }
-    public void _MuteManager()
+  
+    public void _Mute()
     {
-        if(isMute)
-        {
-            AudioObj.mute = false;
-            Bg_Music.mute = false;
-            isMute = false;
-            UIManager.Instance._UISound(false);
-            
-        }
-        else
-        {
-            AudioObj.mute = true;
-            Bg_Music.mute = true;
-            isMute = true;
-            UIManager.Instance._UISound(true);
-        }
+        AudioObj.mute = true;
+        Bg_Music.mute = true;
+        isMute = true;
+        UIManager.Instance._UISound(true);
     }
-
+    public void _UnMute()
+    {
+        AudioObj.mute = false;
+        Bg_Music.mute = false;
+        isMute = false;
+        UIManager.Instance._UISound(false);
+    }
+    public void _ResetMusic()
+    {
+        Bg_Music.Stop();
+        Bg_Music.Play();
+    }
 
 
    

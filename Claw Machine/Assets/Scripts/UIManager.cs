@@ -39,9 +39,9 @@ public class UIManager : MonoBehaviour
         ScoreText.text = "Score : " + GameManager.Instance.Score.ToString();
     }
 
-    public void _UISound(bool ismMute)
+    public void _UISound(bool isMute)
     {
-        if (ismMute)
+        if (isMute)
             MuteButton.sprite = SoundOff;
         else
             MuteButton.sprite = SoundOn;

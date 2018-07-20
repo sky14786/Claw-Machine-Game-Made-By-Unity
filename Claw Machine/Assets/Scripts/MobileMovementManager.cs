@@ -55,6 +55,7 @@ public class MobileMovementManager : MonoBehaviour {
     }
     public void _tightn()
     {
+        //StartCoroutine(ClawController.Instance._Tighten());
         if (tightn)
             tightn = false;
         else
@@ -65,6 +66,7 @@ public class MobileMovementManager : MonoBehaviour {
     }
     public void _untie()
     {
+        //StartCoroutine(ClawController.Instance._Untie());
         if (untie)
             untie = false;
         else
