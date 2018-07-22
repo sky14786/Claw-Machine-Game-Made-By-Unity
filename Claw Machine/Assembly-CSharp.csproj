@@ -94,16 +94,16 @@
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/June/Desktop/Claw-Machine-Game-Made-By-Unity-master (4)/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/June/Desktop/07-21-01-03/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/June/Desktop/Claw-Machine-Game-Made-By-Unity-master (4)/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/June/Desktop/07-21-01-03/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/June/Desktop/Claw-Machine-Game-Made-By-Unity-master (4)/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/June/Desktop/07-21-01-03/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/June/Desktop/Claw-Machine-Game-Made-By-Unity-master (4)/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/June/Desktop/07-21-01-03/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -298,7 +298,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="LitJson">
-      <HintPath>C:/Users/June/Desktop/Claw-Machine-Game-Made-By-Unity-master (4)/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Assets/Plugins/LitJson.dll</HintPath>
+      <HintPath>C:/Users/June/Desktop/07-21-01-03/Claw-Machine-Game-Made-By-Unity-master/Claw Machine/Assets/Plugins/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/June/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
